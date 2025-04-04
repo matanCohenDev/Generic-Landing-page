@@ -271,27 +271,109 @@ function Form() {
           )}
         </div>
       ) : (
-        <div>
-          <h1 className="text-2xl font-bold mb-4">🚀 צור דף נחיתה</h1>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <Input name="businessName" placeholder="שם העסק" value={formData.businessName} onChange={handleChange} />
-            <Input name="businessField" placeholder="תחום עיסוק" value={formData.businessField} onChange={handleChange} />
-            <Input name="businessFieldDetails" placeholder="תיאור תחום העיסוק" value={formData.businessFieldDetails} onChange={handleChange} />
-            <Input name="businessType" placeholder="סוג העסק" value={formData.businessType} onChange={handleChange} />
-            <Input name="serviceAreas" placeholder="אזורי שירות" value={formData.serviceAreas} onChange={handleChange} />
-            <Input name="serviceDescription" placeholder="תיאור השירות" value={formData.serviceDescription} onChange={handleChange} />
-            <Input name="socialMediaAccounts" placeholder="חשבונות רשתות חברתיות" value={formData.socialMediaAccounts} onChange={handleChange} />
-            <Input name="contactInfo" placeholder="פרטי יצירת קשר" value={formData.contactInfo} onChange={handleChange} />
-            <Input name="location" placeholder="מיקום" value={formData.location} onChange={handleChange} />
-            <Input name="callToAction" placeholder="קריאה לפעולה" value={formData.callToAction} onChange={handleChange} />
-            <Input name="ageGroup" placeholder="קבוצת גיל" value={formData.ageGroup} onChange={handleChange} />
-            <Input name="targetAudience" placeholder="קהל יעד" value={formData.targetAudience} onChange={handleChange} />
-            <Input name="yearOfExperience" placeholder="שנות ניסיון" value={formData.yearOfExperience} onChange={handleChange} />
-            <Button type="submit" disabled={loading} className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-md">
-              🚀 צור דף נחיתה
-            </Button>
-          </form>
-        </div>
+        <div className={styles.formContainer}>
+        <h1 className={styles.formTitle}>🚀 צור דף נחיתה</h1>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <Input
+            name="businessName"
+            placeholder="שם העסק"
+            value={formData.businessName}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="businessField"
+            placeholder="תחום עיסוק"
+            value={formData.businessField}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="businessFieldDetails"
+            placeholder="תיאור תחום העיסוק"
+            value={formData.businessFieldDetails}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="businessType"
+            placeholder="סוג העסק"
+            value={formData.businessType}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="serviceAreas"
+            placeholder="אזורי שירות"
+            value={formData.serviceAreas}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="serviceDescription"
+            placeholder="תיאור השירות"
+            value={formData.serviceDescription}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="socialMediaAccounts"
+            placeholder="חשבונות רשתות חברתיות"
+            value={formData.socialMediaAccounts}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="contactInfo"
+            placeholder="פרטי יצירת קשר"
+            value={formData.contactInfo}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="location"
+            placeholder="מיקום"
+            value={formData.location}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="callToAction"
+            placeholder="קריאה לפעולה"
+            value={formData.callToAction}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="ageGroup"
+            placeholder="קבוצת גיל"
+            value={formData.ageGroup}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="targetAudience"
+            placeholder="קהל יעד"
+            value={formData.targetAudience}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Input
+            name="yearOfExperience"
+            placeholder="שנות ניסיון"
+            value={formData.yearOfExperience}
+            onChange={handleChange}
+            className={styles.inputField}
+          />
+          <Button
+            type="submit"
+            disabled={loading}
+            className={styles.submitButton}
+          >
+            🚀 צור דף נחיתה
+          </Button>
+        </form>
+      </div>
       )}
     </div>
   );

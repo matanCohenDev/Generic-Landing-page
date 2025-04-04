@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx ts-node app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@google-cloud/translate": "^8.5.1",
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0"
+  }
+}
